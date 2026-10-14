@@ -1,18 +1,18 @@
 public enum EFruta {
 
-	CUPUACU,
-	GRAVIOLA,
-	LARANJA,
-	MANGA,
-	MORANGO;
+	CUPUACU(12.0),
+	GRAVIOLA(10.0),
+	LARANJA(6.0),
+	MANGA(8.0),
+	MORANGO(9.0);
 
 	private double valor;
-	
-	EFruta(double preco){
 
+	EFruta(double preco) {
+		this.valor = preco;
 	}
 
-	public double valor(){
-
+	public double valor() {
+		return valor;
 	}
 }
